@@ -1,0 +1,74 @@
+Reset some basic styles
+body, h1, .container, .row, .row2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 2px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 300px;
+    padding: 10px;
+   
+    border: 2px solid #0b0808; /* Added border */
+    border-radius: 10px; /* Optional rounded corners */
+    background-color: #aca2a2; /* Background color inside the border */
+    box-shadow: 0 0 10px rgba(40, 39, 39, 0.1); /* Optional shadow for depth */
+}
+
+h1 {
+    grid-column: span 4;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #712020;
+}
+
+.input {
+    grid-column: span 4;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10px;
+    border: 1px solid #290d0d;
+    border-radius: 2px;
+    background-color: #fffefe;
+    border-width: 2px;
+}
+
+.button {
+    height: 50px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    border: 1px solid #8c2b2b;
+    border-radius: 50%;
+    border-style: inset;
+    border-width: 2px;
+    cursor: pointer;
+    background-color: rgb(203, 210, 210);
+}
+
+.button:hover {
+    background-color: #928b8b;
+}
+
+.button:active {
+    background-color: #d0d0d0;
+}
+
+.row, .row2 {
+    display: contents;
+}
